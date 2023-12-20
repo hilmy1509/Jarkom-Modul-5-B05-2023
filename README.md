@@ -1,7 +1,7 @@
 # Jarkom-Modul-5-B05-2023
 
 ### Praktikum Jarkom Modul 5
-Group Members:
+
 | NRP | Name |
 | ------ | ------ |
 |5025211028|Keysa Anadea Aqiva Ajie|
@@ -254,7 +254,6 @@ Listen 443
 
 
 
-
 ### Soal 1
 Agar topologi yang kalian buat dapat mengakses keluar, kalian diminta untuk mengkonfigurasi Aura menggunakan iptables, tetapi tidak ingin menggunakan MASQUERADE.
 
@@ -263,6 +262,9 @@ nano .bashrc
 iptables -t nat -A POSTROUTING -o eth0 -j SNAT -s 10.11.0.0/20 --to-source 192.168.122.2
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
+#### Testing
+<img width="380" alt="Cuplikan layar 2023-12-20 214720" src="https://github.com/hilmy1509/Jarkom-Modul-5-B05-2023/assets/115638253/99015f39-95fd-4fc5-b876-2488981489e1">
+
 
 ### Soal 2
 Kalian diminta untuk melakukan drop semua TCP dan UDP kecuali port 8080 pada TCP.
